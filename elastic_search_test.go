@@ -1,6 +1,9 @@
 package zdpgo_elastic_search
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 /*
 @Time : 2022/5/12 23:33
@@ -24,4 +27,10 @@ func TestElasticSearch_NewWithConfig(t *testing.T) {
 	if e == nil {
 		panic("获取ES对象失败")
 	}
+}
+
+// 测试获取版本号
+func TestElasticSearch_Version(t *testing.T) {
+	e := getElasticSearch()
+	fmt.Println(e.Version())
 }

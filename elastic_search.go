@@ -10,6 +10,7 @@ package zdpgo_elastic_search
 import (
 	"fmt"
 	"github.com/olivere/elastic/v7"
+	"github.com/zhangdapeng520/zdpgo_json"
 	"github.com/zhangdapeng520/zdpgo_log"
 	"log"
 	"os"
@@ -18,9 +19,10 @@ import (
 
 // ElasticSearch ES核心对象
 type ElasticSearch struct {
-	Config *Config         // 配置对象
-	Log    *zdpgo_log.Log  // 日志对象
-	Client *elastic.Client // ES客户端对象
+	Config *Config          // 配置对象
+	Log    *zdpgo_log.Log   // 日志对象
+	Json   *zdpgo_json.Json // Json对象
+	Client *elastic.Client  // ES客户端对象
 }
 
 func New() *ElasticSearch {
@@ -92,5 +94,18 @@ func NewWithConfig(config Config) *ElasticSearch {
 	// 配置对象
 	e.Config = &config
 
+	// 其他对象
+	e.Json = zdpgo_json.New()
+
 	return e
+}
+
+// Version 获取ES的版本号
+func (e *ElasticSearch) Version() string {
+	address := fmt.Sprintf("http://%s:%d", e.Config.Host, e.Config.Port)
+	version, err := e.Client.ElasticsearchVersion(address)
+	if err != nil {
+		e.Log.Error("获取ES版本号失败", "error", err, "address", address)
+	}
+	return version
 }

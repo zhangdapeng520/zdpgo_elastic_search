@@ -55,6 +55,8 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.6.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/zhangdapeng520/zdpgo_json v0.1.2 h1:E5Zf0VpTFZP5VrVGQqp7nvYsOQhDhIg2vQEkjldwlJc=
+github.com/zhangdapeng520/zdpgo_json v0.1.2/go.mod h1:ArbXlMRMsWO+3bIobPaYK/P86yYrefnQLro0/QgHWS4=
 github.com/zhangdapeng520/zdpgo_log v1.3.3 h1:yQuT3wDYklJ/QuGpdIiCOe9Q/ArKTbOOoqZcabpuUbk=
 github.com/zhangdapeng520/zdpgo_log v1.3.3/go.mod h1:Qnr8tZCpmDWqRfJpw0r5ClUNqdOJwLNXIyXA2IGXv6k=
 go.opencensus.io v0.23.0/go.mod h1:XItmlyltB5F7CS4xOC1DcqMoFqwtC6OG2xF7mCv7P7E=

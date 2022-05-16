@@ -15,7 +15,7 @@ import (
 func getElasticSearch() *ElasticSearch {
 	return NewWithConfig(Config{
 		Debug:    true,
-		Host:     "192.168.32.128",
+		Host:     "10.1.3.85",
 		Port:     9200,
 		Username: "elastic",
 		Password: "elastic",

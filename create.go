@@ -2,7 +2,6 @@ package zdpgo_elastic_search
 
 import (
 	"context"
-	"fmt"
 )
 
 /*
@@ -12,22 +11,6 @@ import (
 @Software: Goland2021.3.1
 @Description: create创建相关
 */
-
-//创建
-func (e *ElasticSearch) Create() {
-	//使用字符串
-	e2 := `{"first_name":"John","last_name":"Smith","age":25,"about":"I love to go rock climbing","interests":["sports","music"]}`
-	put2, err := e.Client.Index().
-		Index("megacorp").
-		Type("employee").
-		Id("2").
-		BodyJson(e2).
-		Do(context.Background())
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("Indexed tweet %s to index s%s, type %s\n", put2.Id, put2.Index, put2.Type)
-}
 
 // CreateIndex 创建索引
 func (e *ElasticSearch) CreateIndex(indexName string, index Index) bool {

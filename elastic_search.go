@@ -86,8 +86,6 @@ func NewWithConfig(config Config) *ElasticSearch {
 		elastic.SetInfoLog(log.New(os.Stdout, "", log.LstdFlags)))
 	if err != nil {
 		e.Log.Error("连接ES失败", "error", err, "config", config)
-	} else {
-		e.Log.Debug("连接ES成功")
 	}
 	e.Client = client
 

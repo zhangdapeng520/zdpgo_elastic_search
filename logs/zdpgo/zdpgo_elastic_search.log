@@ -1,0 +1,8 @@
+{"level":"error","ts":"2022-06-13 19:56:38.726","caller":"/zdpgo/zdpgo_elastic_search/elasticsearch.go:98","msg":"获取ES服务器信息失败","error":"EOF"}
+{"level":"error","ts":"2022-06-13 19:57:23.529","caller":"/zdpgo/zdpgo_elastic_search/elasticsearch.go:98","msg":"获取ES服务器信息失败","error":"EOF"}
+{"level":"error","ts":"2022-06-13 20:01:57.939","caller":"/zdpgo/zdpgo_elastic_search/elasticsearch.go:98","msg":"获取ES服务器信息失败","error":"EOF"}
+{"level":"error","ts":"2022-06-13 20:02:55.003","caller":"/zdpgo/zdpgo_elastic_search/elasticsearch.go:91","msg":"获取ES服务器信息失败","error":"EOF"}
+{"level":"error","ts":"2022-06-13 20:03:16.275","caller":"/zdpgo/zdpgo_elastic_search/elasticsearch.go:91","msg":"获取ES服务器信息失败","error":"EOF"}
+{"level":"error","ts":"2022-06-13 20:03:39.940","caller":"/zdpgo/zdpgo_elastic_search/elasticsearch.go:91","msg":"获取ES服务器信息失败","error":"EOF"}
+{"L":"ERROR","T":"2022-06-13 20:03:53.136","C":"zdpgo_elastic_search/elasticsearch.go:91","M":"获取ES服务器信息失败","error":"EOF"}
+{"L":"ERROR","T":"2022-06-13 20:04:17.701","C":"zdpgo_elastic_search/elasticsearch.go:111","M":"获取ES服务器版本失败","error":null}

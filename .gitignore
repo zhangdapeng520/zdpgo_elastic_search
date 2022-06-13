@@ -1,12 +1,5 @@
-**/*.exe
-**/*.dll
-**/*.so
-**/*.dylib
-**/*.test
-**/*.out
-**/.idea
-**/.vscode
-**/tmp
-**/zdp*
-**/test*
+.vscode
+test
+http_ca.crt
+_examples
 
